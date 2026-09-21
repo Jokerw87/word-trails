@@ -17,5 +17,4 @@
   const next=cells[r*size+c];rove(next);next.focus();
  });
  const instructions=board.closest('section').querySelector('p.note');instructions.textContent='点击起点、再点终点。键盘 Tab 进入字阵，方向键移动，空格或 Enter 选格，Escape 取消起点；Home / End 到行首尾，Ctrl + Home / End 到字阵首尾。Tab 可离开字阵。';
- document.title='词语寻宝纸 V1.1 · Word Trails';
 })();
