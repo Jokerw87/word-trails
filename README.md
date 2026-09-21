@@ -21,3 +21,8 @@ Initial publication does not select a reuse license. Runtime has zero third-part
 ## Tests
 
 Run `node test-engine.cjs`. For browser tests set `PLAYWRIGHT_MODULE` to an existing Playwright module and run `node test-browser.cjs`. Test outputs are ignored; see TEST_RESULTS.md for actual evidence and limitations.
+# V1.1 keyboard addition
+
+The board now has one Tab stop. Use arrow keys to move, Space/Enter to choose endpoints, Escape to cancel, Home/End for row boundaries, and Ctrl+Home/End for board boundaries. Tab exits the board. Mouse selection is retained. Generation, matching and PNG engine are unchanged from V1.
+
+Run `test-keyboard.cjs` with `PLAYWRIGHT_MODULE` pointing to an installed Playwright module. This is a keyboard usability improvement, not a screen-reader or WCAG conformance certification.

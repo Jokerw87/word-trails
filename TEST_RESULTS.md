@@ -13,3 +13,8 @@ Node syntax checks passed. Six engine groups and five real Chromium 151.0.7922.3
 Desktop UI and exported answer visually inspected. Export height was increased during implementation to leave room for long clue lists. This is deterministic verification plus same-agent inspection, not cross-model review. No configured linter or type checker was run.
 
 Not run: real printing, Android/iOS hardware, Safari/Firefox, screen-reader user study, learning-effectiveness study. Rare Unicode characters depend on system font coverage. No real personal or customer data used.
+# V1.1 targeted verification
+
+Four additional groups passed on Chromium 151.0.7922.34: roving Tab and directional/Home/End boundaries; Space selection and Escape cancellation; Enter matching and Tab exit; regenerated 16x16/pointer focus and invalidation safety. Browser offline, no application HTTP requests or runtime errors.
+
+Original engine and export source are byte-identical to V1; earlier engine/export evidence below is inherited, not rerun. No Android or screen-reader test performed. V1.1 remote publication pending at this checkpoint.
