@@ -1,5 +1,13 @@
 # 词语寻宝纸 / Word Trails
 
+## V1.2 editable recipe
+
+保存配置 JSON preserves current input fields: title, original word list, grid size, seed and direction mode. Opening the recipe regenerates with the unchanged V1 engine; solving progress is excluded and starts at zero. This also saves valid pending input not yet generated. Invalid input is not saved. Confirm the download yourself; there is no autosave.
+
+Format `word-trails-recipe`, version1, exactly seven fields: format/version/title/words/size/seed/reverse. JSON maximum16 KiB, title24 JavaScript characters, words2000, remaining bounds identical to the generator. Unknown fields/types/versions are rejected. Import validates before asking to replace. Reading is guarded against intervening edits, resets, generation and board interactions. Cancelled/invalid/stale imports preserve current work. Keep private word lists out of shared files.
+
+Run `test-recipe.cjs` using existing PLAYWRIGHT_MODULE. Source geometry/generation and existing keyboard controls are unchanged; prior test results are inherited, not rerun.
+
 An original, dependency-free browser word-search activity. Chinese characters, Latin letters and numbers; editable words; repeatable seeded grids; keyboard or mouse solving; separate question/answer PNGs. Open `index.html` locally. No account, uploads, tracking or persistent storage.
 
 ## Three steps

@@ -2,3 +2,4 @@ test-output/
 node_modules/
 .agent-handoff/
 keyboard-evidence/
+recipe-evidence/
