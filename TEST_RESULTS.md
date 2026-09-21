@@ -1,0 +1,15 @@
+# Actual test record — 2026-09-22
+
+Node syntax checks passed. Six engine groups and five real Chromium 151.0.7922.34 browser groups passed.
+
+- Unicode normalization, duplicates, input bounds and malformed words.
+- Seed repeatability and 320 generated puzzles: 3,200 declared paths spell their claimed words; all requested words are placed or explicitly unplaced.
+- Overpacked grid produces a nonempty unplaced list; invalid selections return no match.
+- Reverse-pair regression: exact selected spelling is preferred for AB/BA. One source-inspection repair, followed by engine and browser reruns.
+- Actual browser keyboard play solved all default clues. Stale exports disable after edits. Markup-like title remains text. Invalid words and unplaced lists are visible.
+- Both PNGs actually downloaded, reopened at 1200×1800, and inspected at a known answer cell: plain paper [255,253,245,255], answer highlight [211,223,151,255].
+- 390px layout with 16×16 horizontally scrollable board. No HTTP requests, storage or page errors in offline test context.
+
+Desktop UI and exported answer visually inspected. Export height was increased during implementation to leave room for long clue lists. This is deterministic verification plus same-agent inspection, not cross-model review. No configured linter or type checker was run.
+
+Not run: real printing, Android/iOS hardware, Safari/Firefox, screen-reader user study, learning-effectiveness study. Rare Unicode characters depend on system font coverage. No real personal or customer data used.
