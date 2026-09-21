@@ -1,5 +1,9 @@
 # 词语寻宝纸 / Word Trails
 
+![词语寻宝纸的自然观察演示题与八乘八字阵](preview.png)
+
+实际桌面截图，使用六个普通自然词语的虚构练习。下载完整仓库并解压，打开 `index.html`，在“打开配置 JSON”选择随附 `example-project.json` 即可生成同一题目。保持文件完整，不要只下载HTML或在ZIP预览里运行。无需账号或安装依赖；这里不是在线托管应用。没有验证实体打印或学习效果。
+
 ## V1.2 editable recipe
 
 保存配置 JSON preserves current input fields: title, original word list, grid size, seed and direction mode. Opening the recipe regenerates with the unchanged V1 engine; solving progress is excluded and starts at zero. This also saves valid pending input not yet generated. Invalid input is not saved. Confirm the download yourself; there is no autosave.
